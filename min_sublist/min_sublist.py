@@ -4,7 +4,7 @@ def min_sublist(numbers):
     If there are multiple, return the first occurrence.
 
     Args:
-        numbers (list of str): The list of numbers.
+        numbers (list of int): The list of numbers.
 
     Returns:
         list of int: (start, end, sum). The start and end indices,
