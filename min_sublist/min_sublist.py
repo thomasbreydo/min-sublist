@@ -1,6 +1,7 @@
 import pandas as pd
 
-FILENAME = "/Users/thomasbreydo/Downloads/a.csv"
+INPUT = "/Users/thomasbreydo/Downloads/a.csv"
+OUTPUT = "/Users/thomasbreydo/Downloads/out.csv"
 
 
 def min_sublist(numbers):
@@ -84,7 +85,7 @@ def percent_to_float(x):
 
 
 def main():
-    df = pd.read_csv(FILENAME, header=None, index_col=0)
+    df = pd.read_csv(INPUT, header=None, index_col=0)
     out = pd.DataFrame(index=["start_date", "end_date", "total_return"])
     for colname in df:
         returns = df[colname].dropna()
@@ -92,7 +93,7 @@ def main():
             [percent_to_float(x) for x in returns]
         )
         out[colname] = (returns.index[start], returns.index[end - 1], total_return)
-    print(out)
+    out.to_csv(OUTPUT)
 
 
 if __name__ == "__main__":
