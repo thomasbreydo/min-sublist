@@ -13,7 +13,7 @@ def min_sublist(numbers):
 
     Examples:
         >>> min_sublist([1, -10, 3, -4, -1, 3])
-        [1, 2, -10]
+        [1, 5, -12]
 
         If the list is of non-negative numbers the sublist will contain just the minimum:
 
