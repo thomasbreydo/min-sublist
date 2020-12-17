@@ -4,16 +4,25 @@ def min_sublist(numbers):
     If there are multiple, return the first occurrence.
 
     Args:
-        numbers (List[int]): The list of numbers.
+        numbers (list of str): The list of numbers.
 
     Returns:
-        List[int]: (start, end, sum). The start and end indices,
+        list of int: (start, end, sum). The start and end indices,
             as well as the sum of the sublist. To retrieve the
             sublist, run `numbers[start:end]`.
+
+    Examples:
+        >>> min_sublist([1, -10, 3, -4, -1, 3])
+        [1, 2, -10]
+
+        If the list is of non-negative numbers the sublist will contain just the minimum:
+
+        >>> min_sublist([10, 15, 30, 2000])
+        [0, 1, 10]
     """
 
     overall_best = [0, 1, numbers[0]]  # (start, end, sum)
-    best_that_includes_last = [0, 1, numbers[0]]
+    best_that_includes_last = [0, 1, numbers[0]]  # (start, end, sum)
     for index_minus_1, n in enumerate(numbers[1:]):
         # index_minus_1 is relative to numbers[1:] so it is 1 less than the true index
         i = index_minus_1 + 1
