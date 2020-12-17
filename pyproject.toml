@@ -5,7 +5,8 @@ description = "Find a sublist with the smallest sum."
 authors = ["Thomas Breydo <tbreydo@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = ">=3.8"
+pandas = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"

@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/min_sublist" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (min-sublist)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (min-sublist) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
