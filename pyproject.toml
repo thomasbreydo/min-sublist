@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "min-sublist"
+version = "0.1.0"
+description = "Find a sublist with the smallest sum."
+authors = ["Thomas Breydo <tbreydo@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
